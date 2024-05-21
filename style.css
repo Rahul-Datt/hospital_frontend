@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Arial;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: #34495e;
+}
+
+
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+    line-height: 80px;
+}   
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+}
+
+nav a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+nav a:hover{
+    color: #3498db;
+}
+
+div.section{
+    height: 20vh;
+    width: 70vw;
+    color: green;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 3px solid skyblue;
+    border-top-style: dashed;
+    line-height: 25px;
+    padding: 20px;
+    font-style: italic;
+}
+
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float:right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#formparent{
+    margin-bottom: 40px;
+}
+
+div .form{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 60vh;
+    width: 20vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div .form input{
+    display: block;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 70%;
+    border-radius: 5px;
+}
+
+div .form textarea{
+    display: block;
+    margin-bottom: 15px;
+    width: 70%;
+    border-radius: 5px;
+    resize: none;
+    height: 100px;
+}
+
+div button{
+    background-color: #3498db;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+    margin-bottom: 20px;
+    background-color: aqua;
+}
+
+.owl-carousel .item img{
+    height: 250px;
+}
+
+footer{
+    background-color: #34495e;
+    color:white;
+    height:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div{
+    margin: 0px 50px;
+}
+
+footer div h1{
+    margin-bottom: 10px;
+}
+footer div ul li{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1257px){
+    div.section{
+        height: 40vh;
+    }
+    div .form{
+        width: 30vw;
+    }
+}
+
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 909px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 30%;
+        height: 60vh;
+        background: #2f3640;
+        top: 80px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a:hover{
+        color: #3498db;
+    }
+    nav ul.show{
+        right: 0;
+    }
+}
+
+@media (max-width: 1500px){
+    footer{
+        display: block;
+        height: auto;
+        width: 100vw;
+    }
+    footer div{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 200px;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 700px){
+    div .form{
+        width: 40vw;
+    }
+}
+@media (max-width: 500px){
+    div .form{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 657px){
+    div.section{
+        height: 60vh;
+    }
+
+}
+
+@media (max-width: 657px){
+    div.section{
+        height: 80vh;
+    }
+}
